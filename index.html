@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Firas AZ's Portfolio</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h3>Firas's Portfolio</h3>
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closeMenu()"></i>
+                    </ul>
+                    <!-- <i class="fa-light fa-bars" onclick="openMenu()"></i> -->
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Full-Stack Developer</p>
+                    <h1>Hi there! <br>I am Firas Abuzahra.</h1>
+                </div>
+            </div>
+        </div>
+    <!-- -------------About------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="static/profile-pic.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an enthusiast computer engineer who’s interested in tech 
+                        and believes that it will have crucial effect on our world. 
+                        I am well educated in Python, C and Java. 
+                        In web development, I am experienced in HTML/CSS/JavaScript. 
+                        I work Django and React JS stack. 
+                        I took the CCNA course by CISCO and preparing to take the exam.
+                        In my free time, I research and read about the latest developments in the industry.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br></li>
+                                <li><span>Django</span><br></li>
+                                <li><span>React JS</span><br></li>
+                                <li><span>Python</span><br></li>
+                                <li><span>C</span><br></li>
+                                <li><span>Java</span><br></li>
+                                <li><span>Linux</span><br></li>
+                                <li><span>MS Office</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Exam Management System</span>
+                                <br>Built a platform for students to take exams online.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of Science (B.S.) in Computer Engineering (2019-2023)</span>
+                                <br>Eastern Mediterranean University (EMU), TRNC</li>
+                                <li><span>High School Diploma (2018-2019)</span>
+                                <br>Rissalah International School (RIS), KSA
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ------------Portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="static/ems.png">
+                        <div class="layer">
+                            <h3>Exam Management System</h3>
+                            <p>The system provides a platform for students to take exams virtually.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="static/ems.png">
+                        <div class="layer">
+                            <h3>W2</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tab){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    console.log(tabcontent)
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tab).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sideMenu = document.getElementById("sideMenu");
+
+            function openMenu(){
+                sideMenu.style.right = "0";
+            }
+            function closeMenu(){
+                sideMenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
