@@ -19,7 +19,7 @@
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <i class="fa-solid fa-x" onclick="closeMenu()"></i>
                     </ul>
                     <!-- <i class="fa-light fa-bars" onclick="openMenu()"></i> -->
@@ -100,15 +100,42 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="static/ems.png">
+                        <img src="static/tic-tac-toe.jpg">
                         <div class="layer">
-                            <h3>W2</h3>
+                            <h3>Fun Tic-Tac-Toe Game</h3>
+                            <p>A fun game for friends to play.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    <!-- ------------Contact------------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>firas.abuzahra@hotmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/firas-abuzahra/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.github.com/firasaz/"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://flowcv.com/resume/chhcagrpog"><i class="fa-regular fa-file"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea id="message" name="Message" cols="20" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                <p>Copyright © Kevin. Made with <i class="fa-sharp fa-solid fa-heart"></i> by Easy Tutorials.</p>
+            </div>
+        </div>
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
