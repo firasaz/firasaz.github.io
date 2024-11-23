@@ -145,8 +145,8 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #39000d;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 1.2rem;
 }
 
 .tab-contents{
@@ -155,6 +155,11 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+.tab-contents.active-tab#skills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* -------------portfolio------------- */
