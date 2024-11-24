@@ -331,6 +331,12 @@ nav .fa-solid{
     display: none;
 }
 
+@media only screen and (max-width:850px) {
+    .work-list{
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+}
+
 @media only screen and (max-width: 760px){
     .header-text{
         margin-top: 100%;
